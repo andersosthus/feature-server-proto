@@ -1,7 +1,7 @@
 syntax = "proto3";
 package featureserver;
 
-option go_package = "featureserverpb";
+option go_package = "github.com/andersosthus/feature-server/featureserverpb";
 
 message FeatureRequest {
     string name = 1;
