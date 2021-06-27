@@ -3,9 +3,6 @@ package featureserver;
 
 option go_package = "featureserverpb";
 
-option (gogoproto.marshaler_all) = true;
-option (gogoproto.unmarshaler_all) = true;
-
 message FeatureRequest {
     string name = 1;
 }
