@@ -17,5 +17,5 @@ message FeatureResponse {
 }
 
 service Feature {
-    rpc IsEnabled (FeatureRequest) returns FeatureResponse{}
+    rpc IsEnabled (FeatureRequest) returns (FeatureResponse) {}
 }
