@@ -4,13 +4,15 @@ package featureserver;
 option go_package = "github.com/andersosthus/feature-server/featureserverpb";
 
 message FeatureRequest {
-    string name = 1;
+    string apiKey = 1;
+    string tenantId = 2;
+    string featureName = 3;
 }
 
 message FeatureResponse {
-    int64 id = 1;
-    string name = 2;
-    bool enabled = 3;
+    string tenantId = 1;
+    string featureName = 2;
+    bool isEnabled = 3;
 }
 
 service Feature {
